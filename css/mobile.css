@@ -1,0 +1,146 @@
+/*
+ * Общие
+ */
+
+html,
+body
+{
+  height: 100%;
+  min-width: 320px;
+  overflow-x: hidden;
+} 
+
+html
+{
+  font-size: 100%;
+}
+
+body
+{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  background: #ebf4f9;
+  position: relative;
+}
+
+.layout
+{
+  min-height: 100%;
+  padding-bottom: 370px;
+}
+
+.footer
+{
+  height: 370px;
+  margin-top: -370px;
+  background: #383838;
+}
+
+.wrapper
+{
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow-y: auto;
+}
+
+.open .wrapper
+{
+  left: 230px;
+  overflow-y: hidden;
+}
+
+
+
+/*
+ * Мобильное меню
+ */
+
+.sidebar_mob
+{
+  position: absolute;
+  left: -230px;
+  top: 0;
+  bottom: 0;
+  width: 230px;
+  overflow-y: auto; 
+}
+
+.open .sidebar_mob
+{
+  left: 0;
+}
+
+.curtain 
+{
+  left: 230px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 30;
+  display: none;
+}
+
+.open .curtain 
+{
+  display: block;
+}
+
+
+
+/*
+ * Мобильный заголовок
+ */
+
+.header_mob
+{
+  height: 45px;
+  position: relative;
+  background: #fff;
+}
+
+.page_title
+{
+  position: absolute;
+  z-index: 10;
+  left: 0;
+  right: 0;
+  top: 0;
+  text-align: center;
+  padding: 0 50px;
+  overflow: hidden;
+  text-overflow: elipse;
+  line-height: 45px;
+}
+
+.nav_mob_toggle
+{
+  width: 45px;
+  height: 45px;
+  padding: 14px 10px;
+  float: left;
+  position: relative;
+  z-index: 20;
+}
+
+.nav_mob_toggle span
+{
+  display: block;
+  height: 3px;
+  border-radius: 4px;
+  background: #008dd2;
+  margin-bottom: 3px;
+}
+
+.logo_mob
+{
+  display: block;
+  width: 45px;
+  height: 45px;
+  background: url(../img/logo-mobile.png) no-repeat left top;
+  float: right;
+  position: relative;
+  z-index: 20;
+}
