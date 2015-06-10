@@ -144,3 +144,24 @@ body
   position: relative;
   z-index: 20;
 }
+
+
+
+/*
+ * Заголовок
+ */
+
+.header
+{
+  height: 58px;
+  background: #fff;
+}
+
+.logo
+{
+  display: block;
+  background: url(../img/logo.png) no-repeat left top;
+  width: 184px;
+  height: 45px;
+  float: left;
+}

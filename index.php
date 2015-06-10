@@ -10,10 +10,12 @@
 </head>
 <body>
 	<aside class="sidebar_mob">
-		<ul>
-			<li><a href="">Пункт меню</a></li>
-			<li><a href="">Пункт меню</a></li>
-			<li><a href="">Пункт меню</a></li>
+		<ul class="menu_mob">
+			<li><a href="">Главная</a></li>
+			<li><a href="">Подобрать тур</a></li>
+			<li><a href="">О нас</a></li>
+			<li><a href="">Статьи</a></li>
+			<li><a href="">Контакты</a></li>
 		</ul>
 	</aside>
 	<div class="wrapper">
@@ -30,7 +32,19 @@
 				
 				<a href="" class="logo_mob"></a>	
 			</header>
-			<header class="header"></header>
+			<header class="header">
+
+				<a href="#" class="logo"></a>
+
+				<ul class="menu">
+					<li><a href="">Главная</a></li>
+					<li><a href="">Подобрать тур</a></li>
+					<li><a href="">О нас</a></li>
+					<li><a href="">Статьи</a></li>
+					<li><a href="">Контакты</a></li>
+				</ul>
+			</header>
+
 			<main class="main">
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non ab, placeat iste temporibus soluta, mollitia quisquam. Esse praesentium, libero veritatis, tempore dignissimos pariatur voluptas minima, voluptatem facere perspiciatis laborum suscipit.
 			</main>
