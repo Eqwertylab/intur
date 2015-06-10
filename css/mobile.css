@@ -161,7 +161,38 @@ body
 {
   display: block;
   background: url(../img/logo.png) no-repeat left top;
+  margin: 5px 0 0 15px;
   width: 184px;
   height: 45px;
   float: left;
+}
+
+.menu
+{
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+
+.menu li
+{
+  float: left;
+  list-style-type: none;
+}
+
+.menu a 
+{
+  display: block;
+  height: 58px;
+  line-height: 58px;
+  text-decoration: none;
+  padding: 0 15px;
+  font-size: 1.125rem;
+  color: #006fa6;
+}
+
+.menu .active a,
+.menu a:hover
+{
+  text-decoration: underline;
 }
