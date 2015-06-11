@@ -35,16 +35,17 @@
       </header>
 
       <header class="header hidden-xs">
+        <div class="container">
+          <a href="#" class="logo"></a>
 
-        <a href="#" class="logo"></a>
-
-        <ul class="menu">
-          <li><a href="">Главная</a></li>
-          <li><a href="">Подобрать тур</a></li>
-          <li><a href="">О нас</a></li>
-          <li><a href="">Статьи</a></li>
-          <li><a href="">Контакты</a></li>
-        </ul>
+          <ul class="menu">
+            <li><a href="">Главная</a></li>
+            <li><a href="">Подобрать тур</a></li>
+            <li><a href="">О нас</a></li>
+            <li><a href="">Статьи</a></li>
+            <li><a href="">Контакты</a></li>
+          </ul>
+        </div>
       </header>
 
       <main class="main">
