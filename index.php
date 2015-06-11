@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Интур - Главная</title>
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300italic,600&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -53,75 +53,80 @@
         <section class="slider_hot">
 
           <div class="container">
-
-            <select name="" id="" class="select_country">
-              <option value="Испания">Испания</option>
-              <option value="Франция">Франция</option>
-              <option value="Чехия">Чехия</option>
-            </select>
             
-            <div class="shgroup_wrapp">
+            <div class="slider_hot_toggle">
+
+              <div class="select_country_wrap">
+                <select name="" id="" class="select_country">
+                  <option value="Испания">Испания</option>
+                  <option value="Франция">Франция</option>
+                  <option value="Чехия">Чехия</option>
+                </select>
+              </div>
               
-              <div class="shgroup" data-country="Испания">
+              <div class="shgroup_wrapp">
+                
+                <div class="shgroup" data-country="Испания">
 
-                <div class="shgroup_item">
-                  <div class="shgroup_city">Барселона</div>
-                  <div class="shgroup_date">19.06 - 30.06</div>
-                  <div class="shgroup_price">23 000 р.</div>
+                  <div class="shgroup_item">
+                    <div class="shgroup_city">Барселона</div>
+                    <div class="shgroup_date">19.06 - 30.06</div>
+                    <div class="shgroup_price">23 000 р.</div>
+                  </div>
+
+                  <div class="shgroup_item">
+                    <div class="shgroup_city">Мадрид</div>
+                    <div class="shgroup_date">20.07 - 05.08</div>
+                    <div class="shgroup_price">26 000 р.</div>
+                  </div>
+
+                  <div class="shgroup_item">
+                    <div class="shgroup_city">Севилья</div>
+                    <div class="shgroup_date">30.09 - 15.10</div>
+                    <div class="shgroup_price">24 000 р.</div>
+                  </div>
                 </div>
 
-                <div class="shgroup_item">
-                  <div class="shgroup_city">Мадрид</div>
-                  <div class="shgroup_date">20.07 - 05.08</div>
-                  <div class="shgroup_price">26 000 р.</div>
+                <div class="shgroup" data-country="Франция">
+
+                  <div class="shgroup_item">
+                    <div class="shgroup_city">Париж</div>
+                    <div class="shgroup_date">19.06 - 30.06</div>
+                    <div class="shgroup_price">23 000 р.</div>
+                  </div>
+
+                  <div class="shgroup_item">
+                    <div class="shgroup_city">Марсель</div>
+                    <div class="shgroup_date">20.07 - 05.08</div>
+                    <div class="shgroup_price">26 000 р.</div>
+                  </div>
+
+                  <div class="shgroup_item">
+                    <div class="shgroup_city">Лион</div>
+                    <div class="shgroup_date">30.09 - 15.10</div>
+                    <div class="shgroup_price">24 000 р.</div>
+                  </div>
                 </div>
 
-                <div class="shgroup_item">
-                  <div class="shgroup_city">Севилья</div>
-                  <div class="shgroup_date">30.09 - 15.10</div>
-                  <div class="shgroup_price">24 000 р.</div>
-                </div>
-              </div>
+                <div class="shgroup" data-country="Чехия">
 
-              <div class="shgroup" data-country="Франция">
+                  <div class="shgroup_item">
+                    <div class="shgroup_city">Прага</div>
+                    <div class="shgroup_date">19.06 - 30.06</div>
+                    <div class="shgroup_price">23 000 р.</div>
+                  </div>
 
-                <div class="shgroup_item">
-                  <div class="shgroup_city">Париж</div>
-                  <div class="shgroup_date">19.06 - 30.06</div>
-                  <div class="shgroup_price">23 000 р.</div>
-                </div>
+                  <div class="shgroup_item">
+                    <div class="shgroup_city">Брно</div>
+                    <div class="shgroup_date">20.07 - 05.08</div>
+                    <div class="shgroup_price">26 000 р.</div>
+                  </div>
 
-                <div class="shgroup_item">
-                  <div class="shgroup_city">Марсель</div>
-                  <div class="shgroup_date">20.07 - 05.08</div>
-                  <div class="shgroup_price">26 000 р.</div>
-                </div>
-
-                <div class="shgroup_item">
-                  <div class="shgroup_city">Лион</div>
-                  <div class="shgroup_date">30.09 - 15.10</div>
-                  <div class="shgroup_price">24 000 р.</div>
-                </div>
-              </div>
-
-              <div class="shgroup" data-country="Чехия">
-
-                <div class="shgroup_item">
-                  <div class="shgroup_city">Прага</div>
-                  <div class="shgroup_date">19.06 - 30.06</div>
-                  <div class="shgroup_price">23 000 р.</div>
-                </div>
-
-                <div class="shgroup_item">
-                  <div class="shgroup_city">Брно</div>
-                  <div class="shgroup_date">20.07 - 05.08</div>
-                  <div class="shgroup_price">26 000 р.</div>
-                </div>
-
-                <div class="shgroup_item">
-                  <div class="shgroup_city">Карловы Вары</div>
-                  <div class="shgroup_date">30.09 - 15.10</div>
-                  <div class="shgroup_price">24 000 р.</div>
+                  <div class="shgroup_item">
+                    <div class="shgroup_city">Карловы Вары</div>
+                    <div class="shgroup_date">30.09 - 15.10</div>
+                    <div class="shgroup_price">24 000 р.</div>
+                  </div>
                 </div>
               </div>
             </div>
