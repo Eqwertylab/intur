@@ -26,71 +26,142 @@ App = {
 
     slider: function() {
 
-      $('.shgroup')
-        .css('display', 'none')
-        .find('.shgroup_item')
-        .css('display', 'none');
+      var SLIDER_DELAY = 4000, 
+      timer, 
+      sel_cont = $('#select_country').val();
 
-      var sel_cont = $('#select_country').val();
-          $('.shgroup[data-country="'+sel_cont+'"]')
-            .css('display', 'block')
-            .find('.shgroup_item')
-            .first()
-            .css('display', 'block');
-      
-      var $slides_node = $('.slides'),
-          $slides_arr = $('.slide'),
-          count = $slides_arr.size(),                         // кол-во слайдов
-          idx = 1,                                            // счетчик слайдов
-          SLIDER_DELAY = 5000,                                // заджержка
-          SLIDER_DELAY_CLICK = 8000,                          // заджержка при клике
-          timer,                                              // указатель на таймер
-          $control = $('.control_nav').find('li'),            // выбор слайда
-          idx_control,                                        // внутрений счетчик для выбора слайда
-          $dir = $('.direction_nav').find('li'),              // следующий / предыдущий слайд
-          idx_dir,                                            // внутрений счетчик
-          idx_active,
-          slide_delay;                                        // время задержки текущего слайда
+      startSlider(sel_cont);
 
-      var timer = setTimeout(slide, SLIDER_DELAY);
-
-      // обработка выбора слайда
-      $control.click(function(event) {
-        $control.removeClass('active');
-        $(this).addClass('active');
-        idx_control = $(this).index();
-        
-        clearTimeout(timer);
-        slide(idx_control);
+      $('#select_country').change(function(){
+        startSlider($('#select_country').val());
       });
 
-      // обработка кликов вперед / назад
-      $dir.click(function(event) {
-        idx_active = $slides_node.children('.active').index();
-        if( $(this).hasClass('next') ) {
-          ++idx_active >= count ? idx_dir = 0 : idx_dir = idx_active;
-        }
-        if( $(this).hasClass('before') ) {
-          --idx_active < 0 ? idx_dir = count - 1 : idx_dir = idx_active;
-        }
-
-        clearTimeout(timer);
-        slide(idx_dir, SLIDER_DELAY_CLICK);
+      $('#direction_nav li').click(function(){
+        var direction = $(this).data('direction');
+        workSlider(direction);
       });
 
-      function slide(set_idx, slide_delay) {
-        !slide_delay ? slide_delay = SLIDER_DELAY : false;
-        set_idx ? idx = set_idx : false;
-        $slides_arr.removeClass('active');
-        $control.removeClass('active');
-        idx >= count ? idx = 0 : false;    
-        $($control[idx]).addClass('active');
-        $($slides_arr[idx++]).addClass('active');
-        
+      function startSlider(sel_cont, direction) {
+
+        direction = direction || 'next';
+
+        var bg_slide;
+
+        var $active_group = $('.shgroup[data-country="'+sel_cont+'"]');
+
+        var dev_width = $(window).width();
+
+        if (dev_width < 768) {
+          bg_slide = $active_group.data('image-mob');
+        } else if (dev_width >= 768) {
+          bg_slide = $active_group.data('image');
+        }
+
+        $('#slider_hot').css('background-image', 'url('+bg_slide+')');
+
+        $('.shgroup')
+          .css('display', 'none')
+          .removeClass('__active')
+          .find('.shgroup_item')
+          .removeClass('__active')
+          .css({ 'display' : 'none', 'opacity' : '0' });
+
+        switch(direction) {
+
+          case 'next':
+            $active_group
+              .addClass('__active')
+              .css('display', 'block')
+              .find('.shgroup_item:first')
+              .addClass('__active')
+              .css('display', 'block')
+              .animate({ 'opacity' : 1 }, 500);
+            break;
+
+          case 'prev':
+            $active_group
+              .addClass('__active')
+              .css('display', 'block')
+              .find('.shgroup_item:last')
+              .addClass('__active')
+              .css('display', 'block')
+              .animate({ 'opacity' : 1 }, 500);
+            break;
+        }
+
+        $('#select_country').find('option[value="'+ sel_cont +'"]').attr('selected', 'selected');
+
         clearTimeout(timer);
-        timer = setTimeout(slide, slide_delay);
+        timer = setTimeout(workSlider, SLIDER_DELAY);
       }
 
+      function workSlider(direction) {
+
+        direction = direction || 'next';
+
+        switch(direction) {
+
+          case 'next':
+
+            $next_slide = $('.shgroup_item.__active')
+              .removeClass('__active')
+              .css({ 'display' : 'none', 'opacity' : '0' })
+              .next();
+
+            if( $next_slide.length ) {
+
+              $next_slide
+                .addClass('__active')
+                .css('display', 'block')
+                .animate({ 'opacity' : 1 }, 500);
+            } else {
+
+              var $next_group = $('.shgroup.__active').next();
+
+              if ($next_group.length) {
+
+                startSlider($next_group.data('country'));
+              } else {
+
+                startSlider($('.shgroup:first').data('country'));
+              }
+            
+            }
+
+            break;
+
+          case 'prev':
+
+            $prev_slide = $('.shgroup_item.__active')
+              .removeClass('__active')
+              .css({ 'display' : 'none', 'opacity' : '0' })
+              .prev();
+
+            if($prev_slide.length) {
+
+              $prev_slide
+                .addClass('__active')
+                .css('display', 'block')
+                .animate({ 'opacity' : 1 }, 500);
+            } else {
+
+              var $prev_group = $('.shgroup.__active').prev();
+
+              if ($prev_group.length) {
+
+                startSlider($prev_group.data('country'), direction);
+              } else {
+
+                startSlider($('.shgroup:last').data('country'), direction);
+              }
+            }
+
+            break;
+        }        
+
+        clearTimeout(timer);
+        timer = setTimeout(workSlider, SLIDER_DELAY);
+      }
     }
   }
 

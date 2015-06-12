@@ -57,7 +57,19 @@ body
   overflow-y: hidden;
 }
 
+.section_head
+{
+  text-align: center;
+  font-weight: 300;
+  font-size: 3rem;
+  line-height: 3rem;
+  margin-bottom: 60px;
+}
 
+.section
+{
+  padding: 60px 0;
+}
 
 /*
  * Мобильное меню
@@ -217,7 +229,7 @@ body
   display: block;
 
   height: 58px;
-  padding: 0 15px;
+  padding: 0 10px;
 
   text-decoration: none;
 
@@ -235,6 +247,32 @@ body
 /*
  * Горячие предложения
  */
+
+.slider_hot
+{
+  height: 392px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.slider_hot:before 
+{
+  content: " ";
+  position: absolute;
+  background: rgba(255,255,255,0.7);
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.slider_hot_toggle
+{
+  margin-top: 30px;
+  position: relative;
+}
 
 .select_country
 {
@@ -261,13 +299,70 @@ body
 
 .select_country_wrap
 {
-  padding: 142px 0 0 0;
-  background: url(../img/fire.png) no-repeat center 30px;
+  padding: 112px 0 0 0;
+  background: url(../img/fire.png) no-repeat center top;
   width: 170px;
   margin: auto;
 }
 
-.shgroup_city
+.shgroup
 {
-  
+  margin-top: 30px;
+}
+
+.shgroup_item
+{
+  color: #000000;
+  text-align: center;
+  font-size: 2rem;
+  font-style: italic; 
+}
+
+.direction_nav
+{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 215px;
+}
+
+.direction_nav li
+{
+  width: 72px;
+  height: 72px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  cursor: pointer;
+  position: absolute;
+}
+
+.direction_nav li:hover
+{
+  opacity: 1;
+}
+
+.direction_nav .prev
+{
+  background-image: url(../img/left.png);
+  left: -15px;
+}
+
+.direction_nav .next
+{
+  background-image: url(../img/right.png);
+  right: -15px;
+}
+
+
+
+/*
+ * Заявка
+ */
+
+.order 
+{
+  background: #ffffff;
 }

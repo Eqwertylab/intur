@@ -1,4 +1,58 @@
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
+  
+/*
+ * Горячие предложения
+ */
 
+.slider_hot
+{
+  height: 640px;
+  overflow: hidden;
 }
+
+.slider_hot:before 
+{
+  display: none;
+}
+
+.slider_hot_toggle
+{
+  margin-top: 110px;
+  padding: 0 75px;
+}
+
+.select_country_wrap
+{
+  float: left;
+  margin-left: 60px;
+}
+
+.select_country
+{
+  text-shadow: -1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+.shgroup_wrapp
+{
+  float: right;
+  width: 55%;
+}
+
+.shgroup_item
+{
+  color: #ffffff;
+  text-shadow: -1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+.direction_nav
+{
+  top: 60px;
+}
+
+.direction_nav li
+{
+  opacity: 0.7;
+}
+
+} /* <-- Small devices */

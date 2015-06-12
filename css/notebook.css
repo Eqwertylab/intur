@@ -1,4 +1,13 @@
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
 
+/*
+ * Заголовок
+ */
+
+.menu a
+{
+  padding: 0 15px;
 }
+
+} /* <-- Medium devices */
