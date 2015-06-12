@@ -57,7 +57,7 @@
             <div class="slider_hot_toggle">
 
               <div class="select_country_wrap">
-                <select name="" id="" class="select_country">
+                <select name="" id="select_country" class="select_country">
                   <option value="Испания">Испания</option>
                   <option value="Франция">Франция</option>
                   <option value="Чехия">Чехия</option>
