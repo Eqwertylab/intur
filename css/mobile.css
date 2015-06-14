@@ -61,8 +61,8 @@ body
 {
   text-align: center;
   font-weight: 300;
-  font-size: 3rem;
-  line-height: 3rem;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
   margin-bottom: 60px;
 }
 
@@ -70,6 +70,26 @@ body
 {
   padding: 60px 0;
 }
+
+.btn
+{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  background: #008dd2;
+  text-align: center;
+  display: inline-block;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover
+{
+  background: #007bb7;
+}
+
+
 
 /*
  * Мобильное меню
@@ -365,4 +385,79 @@ body
 .order 
 {
   background: #ffffff;
+}
+
+.control
+{
+  border: 1px solid #ebebeb;
+  width: 100%;
+  color: #6a8294;
+  margin-bottom: 20px;
+}
+
+textarea
+{
+  height: 120px;
+  resize: none;
+  padding: 15px;
+}
+
+select.control,
+input.control
+{
+  font-size: 1.875rem;
+  height: 72px;
+  line-height: 70px;
+  padding-left: 100px;
+  background-repeat: no-repeat;
+  background-position: 14px 7px;
+}
+
+select.control
+{
+  -webkit-appearance: none;
+   -moz-appearance: none;
+    -ms-appearance: none;
+        appearance: none;
+}
+
+.control.__place_from
+{
+  background-image: url(../img/ico-place_from.png);
+}
+
+.control.__place_to
+{
+  background-image: url(../img/ico-place_to.png);
+}
+
+.control.__date_from
+{
+  background-image: url(../img/ico-date_from.png);
+}
+
+.control.__date_to
+{
+  background-image: url(../img/ico-date_to.png);
+}
+
+.control.__count
+{
+  background-image: url(../img/ico-count.png);
+}
+
+.control.__econom
+{
+  background-image: url(../img/ico-econom.png);
+}
+
+.center-text
+{
+  text-align: center;
+}
+
+.order .btn 
+{
+  font-size: 1.875rem;
+  padding: 10px 80px;
 }

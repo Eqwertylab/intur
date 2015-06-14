@@ -1,5 +1,11 @@
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
+
+.section_head
+{
+  font-size: 3rem;
+  line-height: 3rem;
+}
   
 /*
  * Горячие предложения
@@ -54,5 +60,24 @@
 {
   opacity: 0.7;
 }
+
+
+
+/*
+ * Заявка
+ */
+
+.control
+{
+  margin-bottom: 30px;
+}
+
+select.control,
+input.control
+{
+  padding-left: 115px;
+}
+
+
 
 } /* <-- Small devices */

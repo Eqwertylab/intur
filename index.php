@@ -151,7 +151,7 @@
                 <div class="row">
 
                   <div class="col-sm-6">
-                    <select name="place_from" id="" class="control">
+                    <select name="place_from" id="" class="control __place_from">
                       <option value="Оренбург">Оренбург</option>
                       <option value="Уфа">Уфа</option>
                       <option value="Самара">Самара</option>
@@ -160,11 +160,35 @@
                   </div>
 
                   <div class="col-sm-6">
-                    <select name="place_to" id="" class="control">
-                      <option value="Оренбург">Оренбург</option>
-                      <option value="Уфа">Уфа</option>
-                      <option value="Самара">Самара</option>
-                      <option value="Казань">Казань</option>
+                    <select name="place_to" id="" class="control __place_to">
+                      <option value="Турция">Турция</option>
+                      <option value="Египет">Египет</option>
+                      <option value="Греция">Греция</option>
+                      <option value="Испания">Испания</option>
+                      <option value="Россия">Россия</option>
+                      <option value="Австрия">Австрия</option>
+                      <option value="Андорра">Андорра</option>
+                      <option value="Болгария">Болгария</option>
+                      <option value="Вьетнам">Вьетнам</option>
+                      <option value="Доминиканская">Доминиканская Республика</option>
+                      <option value="Израиль">Израиль</option>
+                      <option value="Индия">Индия</option>
+                      <option value="Индонезия">Индонезия</option>
+                      <option value="Иордания">Иордания</option>
+                      <option value="Камбоджа">Камбоджа</option>
+                      <option value="Китай">Китай</option>
+                      <option value="Куба">Куба</option>
+                      <option value="Маврикий">Маврикий</option>
+                      <option value="Мальдивы">Мальдивы</option>
+                      <option value="Марокко">Марокко</option>
+                      <option value="Мексика">Мексика</option>
+                      <option value="ОАЭ">ОАЭ</option>
+                      <option value="Сейшелы">Сейшелы</option>
+                      <option value="Сингапур">Сингапур</option>
+                      <option value="Таиланд">Таиланд</option>
+                      <option value="Танзания">Танзания</option>
+                      <option value="Тунис">Тунис</option>
+                      <option value="Шри-Ланка">Шри-Ланка</option>
                     </select>
                   </div>
                 </div>
@@ -172,11 +196,90 @@
                 <div class="row">
 
                   <div class="col-sm-6">
-                    <input type="text" class="control" name="date_from">
+                    <input type="text" class="control __date_from" name="date_from" placeholder="Дата отправления">
                   </div>
                   
                   <div class="col-sm-6">
-                    <input type="text" class="control" name="date_to">
+                    <select name="date_to" id="" class="control __date_to">
+                      <option value="1 ночь">1 ночь</option>
+                      <option value="2 ночи">2 ночи</option>
+                      <option value="3 ночи">3 ночи</option>
+                      <option value="4 ночи">4 ночи</option>
+                      <option value="5 ночей">5 ночей</option>
+                      <option value="6 ночей">6 ночей</option>
+                      <option value="7 ночей">7 ночей</option>
+                      <option value="8 ночей">8 ночей</option>
+                      <option value="9 ночей">9 ночей</option>
+                      <option value="10 ночей">10 ночей</option>
+                      <option value="11 ночей">11 ночей</option>
+                      <option value="12 ночей">12 ночей</option>
+                      <option value="13 ночей">13 ночей</option>
+                      <option value="14 ночей">14 ночей</option>
+                      <option value="15 ночей">15 ночей</option>
+                      <option value="16 ночей">16 ночей</option>
+                      <option value="17 ночей">17 ночей</option>
+                      <option value="18 ночей">18 ночей</option>
+                      <option value="19 ночей">19 ночей</option>
+                      <option value="20 ночей">20 ночей</option>
+                      <option value="21 ночь">21 ночь</option>
+                      <option value="22 ночи">22 ночи</option>
+                      <option value="23 ночи">23 ночи</option>
+                      <option value="24 ночи">24 ночи</option>
+                      <option value="25 ночей">25 ночей</option>
+                      <option value="26 ночей">26 ночей</option>
+                      <option value="27 ночей">27 ночей</option>
+                      <option value="28 ночей">28 ночей</option>
+                      <option value="29 ночей">29 ночей</option>
+                      <option value="30 ночей">30 ночей</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="row">
+
+                  <div class="col-sm-6">
+                    <select name="count" id="" class="control __count">
+                      <option value="1 человек">1 человек</option>
+                      <option value="2 человека">2 человека</option>
+                      <option value="3 человека">3 человека</option>
+                      <option value="4 человека">4 человека</option>
+                      <option value="5 человек">5 человек</option>
+                      <option value="6 человек">6 человек</option>
+                      <option value="7 человек">7 человек</option>
+                      <option value="8 человек">8 человек</option>
+                      <option value="9 человек">9 человек</option>
+                      <option value="10 человек">10 человек</option>
+                      <option value="11 человек">11 человек</option>
+                      <option value="12 человек">12 человек</option>
+                      <option value="13 человек">13 человек</option>
+                      <option value="14 человек">14 человек</option>
+                      <option value="15 человек">15 человек</option>
+                      <option value="16 человек">16 человек</option>
+                    </select>
+                  </div>
+                  
+                  <div class="col-sm-6">
+                    <select name="econom" id="" class="control __econom">
+                      <option value="Бюджет">Бюджет</option>
+                      <option value="Стандарт">Стандарт</option>
+                      <option value="VIP">VIP</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="row">
+
+                  <div class="col-sm-12">
+
+                    <textarea name="more_info" id="" class="control" placeholder="В этом поле укажите ваши пожелания и вопросы в свободном формате"></textarea>
+                  </div>
+                </div>
+
+                <div class="row">
+
+                  <div class="col-sm-12 center-text">
+
+                    <input type="submit" class="btn" value="Найти">
                   </div>
                 </div>
               </form>

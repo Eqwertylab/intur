@@ -88,8 +88,8 @@ App = {
               .animate({ 'opacity' : 1 }, 500);
             break;
         }
-
-        $('#select_country').find('option[value="'+ sel_cont +'"]').attr('selected', 'selected');
+        
+        $('#select_country').val(sel_cont);
 
         clearTimeout(timer);
         timer = setTimeout(workSlider, SLIDER_DELAY);
