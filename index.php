@@ -139,16 +139,16 @@
           </div>
         </section>
 
-        <section class="section order">
+        <section class="section order" id="order_form_wrap">
           
           <div class="container">
             <header class="section_head">Профессиональный <br>подбор тура специалистами</header>
 
             <div class="row">
 
-              <form class="col-sm-12 col-md-10 col-lg-10 center-block">
+              <form class="col-sm-12 col-md-10 col-lg-10 center-block" id="order_form">
 
-                <div class="row">
+                <div class="row form_row">
 
                   <div class="col-sm-6">
                     <select name="place_from" id="" class="control __place_from">
@@ -193,10 +193,10 @@
                   </div>
                 </div>
 
-                <div class="row">
+                <div class="row form_row">
 
                   <div class="col-sm-6">
-                    <input type="text" class="control __date_from" name="date_from" placeholder="Дата отправления">
+                    <input type="text" id="date_from" class="control __date_from" name="date_from" placeholder="Дата отправления">
                   </div>
                   
                   <div class="col-sm-6">
@@ -235,7 +235,7 @@
                   </div>
                 </div>
 
-                <div class="row">
+                <div class="row form_row">
 
                   <div class="col-sm-6">
                     <select name="count" id="" class="control __count">
@@ -267,7 +267,7 @@
                   </div>
                 </div>
 
-                <div class="row">
+                <div class="row form_row">
 
                   <div class="col-sm-12">
 
@@ -278,11 +278,54 @@
                 <div class="row">
 
                   <div class="col-sm-12 center-text">
-
+                    <input type="hidden" name="name" id="name">
+                    <input type="hidden" name="contacts" id="contacts">
                     <input type="submit" class="btn" value="Найти">
                   </div>
                 </div>
               </form>
+            </div>
+          </div>
+          
+          <div id="dialog_form_wrapper" title="Ваши контакты">
+            <form id="dialog_form">
+              <fieldset>
+                <div class="dform_row">
+                  <label for="name" class="dform_label">Имя</label>
+                  <input type="text" name="name" id="name" class="text ui-widget-content ui-corner-all dcontrol">
+                </div>
+                <div class="dform_row">
+                  <label for="contacts" class="dform_label">Телефон или email</label>
+                  <input type="text" name="contacts" id="contacts" class="text ui-widget-content ui-corner-all dcontrol">
+                </div>
+           
+                <!-- Allow form submission with keyboard without duplicating the dialog button -->
+                <input type="submit" tabindex="-1" style="position:absolute; top:-1000px">
+              </fieldset>
+            </form>
+          </div>
+
+          <div id="dialog_answer_wrapper" title="Спасибо за обращение!">   
+            <p>Ваша заявка принята в работу. Мы свяжемся с вами сразу после подбора тура.</p>
+          </div>
+
+        </section>
+
+        <section class="section team">
+
+          <div class="container">
+            
+            <header class="section_head">Которые знают толк в отдыхе</header>
+
+            <div class="row">
+              <div class="col-sm-12 col-md-10 center-block">
+
+                <div class="row team_list">
+                  <div class="col-sm-4 team_item">1</div>
+                  <div class="col-sm-4 team_item">2</div>
+                  <div class="col-sm-4 team_item">3</div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -292,6 +335,11 @@
   </div>
   <div class="curtain" id="curtain"></div>
   <script src="https://yastatic.net/jquery/2.1.3/jquery.min.js"></script>
+  <script src="js/jquery-ui/jquery-ui.min.js"></script>
+  <script src="js/jquery-ui/datepicker-ru.js"></script>
+  <script src="js/jquery-validation/dist/jquery.validate.min.js"></script>
+  <script src="js/jquery-validation/dist/localization/messages_ru.min.js"></script>
+  <script src="js/jquery-validation/dist/additional-methods.min.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>

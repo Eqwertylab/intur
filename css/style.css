@@ -1,4 +1,6 @@
 @import url(normalize.css);
+@import url(../js/jquery-ui/jquery-ui.css);
+@import url(../js/jquery-ui/jquery-ui.theme.css);
 @import url(grid12.css);
 @import url(ranges.css);
 @import url(mobile.css);

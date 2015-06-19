@@ -387,15 +387,27 @@ body
   background: #ffffff;
 }
 
+label.error
+{
+  font-size: 0.75rem;
+  color: #ff8d8d; 
+}
+
 .control
 {
   border: 1px solid #ebebeb;
   width: 100%;
   color: #6a8294;
   margin-bottom: 20px;
+  outline: none;
 }
 
-textarea
+.control.error
+{
+  border-color: #f4c3c3;
+}
+
+textarea.control
 {
   height: 120px;
   resize: none;
@@ -461,3 +473,76 @@ select.control
   font-size: 1.875rem;
   padding: 10px 80px;
 }
+
+
+/*
+ * Всплывающее окно
+ */
+.ui-widget input, 
+.ui-widget select, 
+.ui-widget textarea, 
+.ui-widget button,
+.ui-widget
+{
+  font-family: 'Open Sans', sans-serif;
+}
+
+fieldset
+{
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.dform_label
+{
+  display: block;
+  font-size: 0.875rem;
+}
+
+.dform_row + .dform_row
+{
+  margin-top: 15px;
+}
+
+.dcontrol
+{
+  border: 1px solid #ebebeb;
+  border-radius: 0;
+  width: 100%;
+  color: #6a8294;
+  outline: none;
+}
+
+.dcontrol.error
+{
+  border-color: #f4c3c3;
+}
+
+select.dcontrol,
+input.dcontrol
+{
+  font-size: 1rem;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 15px;
+}
+
+
+
+/*
+ * Команда
+ */
+
+.team
+{
+  height: 700px;
+  background: url(../img/team_background.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.team .section_head
+{
+  color: #ffffff;
+}
+

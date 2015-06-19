@@ -9,6 +9,7 @@ App = {
 
       App.Fn.sidebar_mob();
       App.Fn.slider();
+      App.Fn.order_form();
     })
   },
 
@@ -162,6 +163,160 @@ App = {
         clearTimeout(timer);
         timer = setTimeout(workSlider, SLIDER_DELAY);
       }
+    },
+
+    order_form: function() {
+
+      var field_name = $('#order_form').find('#name'),
+          field_contacts = $('#order_form').find('#contacts'),
+          field_modal_name = $('#dialog_form').find('#name'),
+          field_modal_contacts = $('#dialog_form').find('#contacts');
+
+      /*
+       * Календарь
+       */ 
+
+      $( '#date_from' ).datepicker({
+        minDate: new Date()
+      });
+
+      // Активируем проверку формы
+      $('#date_from').change(function() {
+        validator.form();
+      });
+
+
+      /*
+       * Валидация основной формы
+       */ 
+
+      $.validator.addMethod(
+        "russiaDate",
+        function(value, element) {
+          // put your own logic here, this is just a (crappy) example
+          return value.match(/^\d\d?\.\d\d?\.\d\d\d\d$/);
+        },
+        "Не верный формат даты. Пример: 25.09.2015"
+      );
+
+      var validator = $('#order_form').validate({
+
+        rules: {
+
+          date_from: {
+
+            required: true,
+            russiaDate: true
+          }
+        },
+
+        messages: {
+          date_from: {
+
+            required: 'Укажите желаемую дату отправления'
+          },
+        },
+
+        submitHandler: function(form) {
+
+          if(!field_contacts.val().length) {
+
+            mydialog.dialog( "open" );
+            return false;
+          } else {
+
+            /*
+             *
+             *  ТУТ ДЕЛАЕМ AJAX ОТПРАВКУ ФОРМЫ
+             *
+             */
+            console.log('Стартуем отправку формы');
+            return false;
+          }
+        }
+      });
+
+
+
+      /*
+       * Валидация модальной формы
+       */ 
+
+      var dvalidator = $('#dialog_form').validate({
+
+        rules: {
+
+          contacts: {
+
+            required: true
+          }
+        },
+
+        messages: {
+          contacts: {
+
+            required: 'Укажите для связи с нами'
+          },
+        },
+
+        submitHandler: function(form) {
+          
+          $('#dialog_form_wrapper').dialog( "close" );
+          $('#order_form').submit();
+        }
+      });
+
+
+      /*
+       * Модальное окно формы
+       */
+
+      var mydialog = $( '#dialog_form_wrapper' ).dialog({
+        autoOpen: false,
+        width: 300,
+        modal: true,
+        buttons: {
+
+          "Подобрать тур": function() {
+
+            field_name.val( field_modal_name.val() );
+            field_contacts.val( field_modal_contacts.val() );
+
+            $('#dialog_form').submit();
+          }
+        },
+        close: function() {
+
+          resetForm('#dialog_form');
+        }
+      });
+
+
+      /*
+       * Модальное окно ответа
+       */
+
+      var mydialog_answer = $( '#dialog_answer_wrapper' ).dialog({
+        modal: true,
+        autoOpen: false,
+        width: 300,
+        buttons: {
+
+          'Закрыть': function() {
+
+            $( this ).dialog( "close" );
+          }
+        }
+      });
+
+
+      function resetForm(form_selector) {
+
+        $(form_selector).find('input:text, input:password, input:file, select, textarea').val('');
+        $(form_selector).find('input:radio, input:checkbox')
+          .removeAttr('checked').removeAttr('selected');
+      }
+      
     }
   }
 

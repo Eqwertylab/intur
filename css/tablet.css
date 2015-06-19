@@ -69,13 +69,18 @@
 
 .control
 {
-  margin-bottom: 30px;
+  margin-bottom: 0;
 }
 
 select.control,
 input.control
 {
   padding-left: 115px;
+}
+
+.form_row
+{
+  margin-bottom: 30px;
 }
 
 
