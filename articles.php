@@ -54,11 +54,59 @@
           <div class="row">
             
             <div class="col-sm-4 col-md-3 pull-right">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius natus iste dolore laboriosam, amet repellendus aut est magnam ipsam molestiae, fuga unde fugiat at accusamus alias debitis maiores distinctio ea.
+              <a href="" class="sidebar_banner __one"><img src="img/banners/adv1.jpg" alt=""></a>
+
+              <div class="search_wrapper">
+                <input type="text" class="base_control search" placeholder="Поиск...">
+                <input type="submit" class="search_btn">
+              </div>
+
+              <a href="" class="sidebar_banner __two"><img src="img/banners/adv2.jpg" alt=""></a>
             </div>
 
             <div class="col-sm-8 col-md-9 pull-left">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus provident inventore expedita, nostrum aliquid enim asperiores libero corrupti voluptas placeat labore repudiandae et rem voluptatem culpa nisi magni dicta. Dolores.
+
+              <ol class="breadcrumb">
+                <li><a href="/">Главная</a></li>
+                <li>&nbsp;&nbsp;>&nbsp;&nbsp;</li>
+                <li>Блог</li>
+                <li></li>
+              </ol>
+
+              <h1>Статьи</h1>
+              
+              <section class="article_list">
+
+                <article class="article">
+                  <header class="article_head">Пляжи мужские и женские: как это работает в мире?</header>
+                  <img src="img/banners/article1.jpg" alt="" class="article_banner">
+                  <div class="article_intro">
+                    <p>Накануне первого июньского уик-энда в мэрию Москвы поступило предложение о создании в городе раздельных пляжей для мужчин и женщин. С инициативой выступил первый зампред Центрального духовного управления мусульман Альбир Крганов. TURIZM.RU попытался понять, традициям каких стран могла бы последовать в этом отношении столица. </p>
+                    <p>Инициатива Альбира Крганова по времени совпала с открытием в столице купального сезона. В Москве недавно начали работу 125 зон для массового летнего отдыха, из которых только в десяти разрешено купаться. На какие претендует господин Крганов, пока не ясно. Еще более туманны его намерения объединить таким вот странным образом верующих разных религий. В обращении к мэру данную выгоду он подчеркнул особо. Если учесть, что разнополые пляжи «по религиозным и нравственным соображениям» (цитата из обращения) требуются разве что мусульманам и иудеям, то примирить между собой конфессии может только чудо — непонимание длится с библейских времен. Отдых-отдыхом, но как бы дело до драки не дошло! </p>
+                  </div>
+                  <a href="" class="btn">Читать далее</a>
+                </article>
+
+                <article class="article">
+                  <header class="article_head">10 вещей, которые стоит привезти из Германии</header>
+                  <img src="img/banners/article2.jpg" alt="" class="article_banner">
+                  <div class="article_intro">
+                    <p>Не секрет, что у каждого города мира есть свой собственный образ и репутация, которые для мировых столиц становятся своеобразным брендом. Такой имидж, как и любой другой, периодически нуждается в обновлении, а то и вовсе в глобальной смене для ещё большей привлекательности. </p>
+                    <p>На сегодняшний день работает множество компаний, занимающихся подобной деятельностью, замеряющих весомость репутации и привлекательности того или иного города и разрабатывающих глобальные программы, которые помогают представить город в новом, более выгодном свете. К примеру, успешный ребрендинг Берлина и Нью-Йорка позволил изменить к городам отношение самих жителей, а смена образа Амстердама, Мадрида и Копенгагена сделала их более привлекательными для туристов. </p>
+                  </div>
+                  <a href="" class="btn">Читать далее</a>
+                </article>
+              </section>
+
+              <ul class="pagination">
+                <li class="disabled"><span><</span></li>
+                <li class="active"><a href="/blog">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li class="control"><a href="#">></a></li>
+              </ul>
             </div>
           </div>
         </div>
@@ -67,13 +115,14 @@
     <footer class="footer">
       <div class="container">
         <div class="row">
+
           <div class="col-sm-4 col-md-5">
             <div class="row">
               <div class="col-lg-2 visible-lg">
                 <a href="" class="logo-footer"></a>
               </div>
               <div class="col-md-12 col-lg-10">
-                <header class="fo_header">8(3532)71-14-66</header>
+                <header class="fo_header">8 (3532) 71-14-66</header>
                 <p>г.Оренбург, ул. М.Горького 25</p>
                 <p><a href="">Показать на карте</a></p>
                 <p>№ регистрации в реестре турагенств: <br>AB1234567890</p>
@@ -81,6 +130,7 @@
               </div>
             </div>
           </div>
+
           <div class="col-sm-4 col-md-4 hidden-xs">
             <header class="fo_header">Это интересно</header>
             <ul class="fo_list">
@@ -106,6 +156,7 @@
               </li>
             </ul>
           </div>
+
           <div class="col-sm-4 col-md-3 hidden-xs">
             <header class="fo_header">Мы в соцсетях</header>
             <ul class="soc">

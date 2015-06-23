@@ -23,7 +23,8 @@ body
 
   position: relative;
 
-  background: #ebf4f9;
+  color: #0d3350;
+  background: #f3f7fa;
 }
 
 .layout
@@ -59,11 +60,13 @@ body
 
 .section_head
 {
-  text-align: center;
-  font-weight: 300;
   font-size: 1.8rem;
+  font-weight: 300;
   line-height: 2.2rem;
+
   margin-bottom: 60px;
+
+  text-align: center;
 }
 
 .section
@@ -75,13 +78,18 @@ body
 {
   font-family: 'Open Sans', sans-serif;
   font-size: 1rem;
-  background: #008dd2;
-  text-align: center;
+
   display: inline-block;
-  color: #ffffff;
+
   padding: 10px 20px;
-  border: none;
+
   cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+
+  color: #fff;
+  border: none;
+  background: #008dd2;
 }
 
 .btn:hover
@@ -110,6 +118,7 @@ body
   overflow-y: auto;
 
   width: 230px;
+
   background: #fff;
 }
 
@@ -141,23 +150,27 @@ body
 {
   margin: 0;
   padding: 0;
+
   list-style-type: none;
 }
 
 .menu_mob a
 {
-  text-decoration: none;
-  padding: 15px 0 15px 20px;
   display: block;
+
+  padding: 15px 0 15px 20px;
+
+  text-decoration: none;
+
   color: #006fa6;
-  border-bottom: 1px solid #CEE4EF;
+  border-bottom: 1px solid #cee4ef;
 }
 
 .menu_mob .active a
 {
+  color: #fff;
+  border-bottom: 1px solid #006fa6;
   background: #006fa6;
-  color: #ffffff;
-  border-bottom: 1px solid #006fa6
 }
 
 
@@ -299,36 +312,45 @@ body
 
 .slider_hot
 {
-  height: 392px;
+  position: relative;
+
   overflow: hidden;
+
+  height: 392px;
+
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
 }
 
-.slider_hot:before 
+.slider_hot:before
 {
-  content: " ";
   position: absolute;
-  background: rgba(255,255,255,0.7);
-  left: 0;
-  right: 0;
   top: 0;
+  right: 0;
   bottom: 0;
+  left: 0;
+
+  content: ' ';
+
+  background: rgba(255,255,255,.7);
 }
 
 .slider_hot_toggle
 {
-  margin-top: 30px;
   position: relative;
+
+  margin-top: 30px;
 }
 
 .select_country
 {
   font-size: 2.25rem;
-  line-height: 2.50rem;
   font-weight: 300;
   font-style: italic;
+  line-height: 2.50rem;
+
+  width: 100%;
+  padding-right: 10px;
 
   text-align: center;
 
@@ -337,8 +359,6 @@ body
   border-bottom: 1px solid #bf0000;
   outline: none;
   background: transparent url(../img/appearance.png) no-repeat right center;
-  padding-right: 10px;
-  width: 100%;
 
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -348,10 +368,11 @@ body
 
 .select_country_wrap
 {
-  padding: 112px 0 0 0;
-  background: url(../img/fire.png) no-repeat center top;
   width: 170px;
   margin: auto;
+  padding: 112px 0 0 0;
+
+  background: url(../img/fire.png) no-repeat center top;
 }
 
 .shgroup
@@ -361,31 +382,38 @@ body
 
 .shgroup_item
 {
-  color: #000000;
-  text-align: center;
   font-size: 2rem;
-  font-style: italic; 
+  font-style: italic;
+
+  text-align: center;
+
+  color: #000;
 }
 
 .direction_nav
 {
+  position: absolute;
+  top: 215px;
+  right: 0;
+  left: 0;
+
   margin: 0;
   padding: 0;
+
   list-style-type: none;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 215px;
 }
 
 .direction_nav li
 {
+  position: absolute;
+
   width: 72px;
   height: 72px;
+
+  cursor: pointer;
+
   background-repeat: no-repeat;
   background-position: center center;
-  cursor: pointer;
-  position: absolute;
 }
 
 .direction_nav li:hover
@@ -395,14 +423,16 @@ body
 
 .direction_nav .prev
 {
-  background-image: url(../img/left.png);
   left: -15px;
+
+  background-image: url(../img/left.png);
 }
 
 .direction_nav .next
 {
-  background-image: url(../img/right.png);
   right: -15px;
+
+  background-image: url(../img/right.png);
 }
 
 
@@ -411,23 +441,27 @@ body
  * Заявка
  */
 
-.order 
+.order
 {
-  background: #ffffff;
+  background: #fff;
 }
 
 label.error
 {
-  font-size: 0.75rem;
-  color: #ff8d8d; 
+  font-size: .75rem;
+
+  color: #ff8d8d;
 }
 
-.control
+select.control,
+input.control,
+textarea.control
 {
-  border: 1px solid #ebebeb;
   width: 100%;
-  color: #6a8294;
   margin-bottom: 20px;
+
+  color: #6a8294;
+  border: 1px solid #ebebeb;
   outline: none;
 }
 
@@ -439,17 +473,20 @@ label.error
 textarea.control
 {
   height: 120px;
-  resize: none;
   padding: 15px;
+
+  resize: none;
 }
 
 select.control,
 input.control
 {
   font-size: 1.875rem;
-  height: 72px;
   line-height: 70px;
+
+  height: 72px;
   padding-left: 100px;
+
   background-repeat: no-repeat;
   background-position: 14px 7px;
 }
@@ -457,9 +494,9 @@ input.control
 select.control
 {
   -webkit-appearance: none;
-   -moz-appearance: none;
-    -ms-appearance: none;
-        appearance: none;
+     -moz-appearance: none;
+      -ms-appearance: none;
+          appearance: none;
 }
 
 .control.__place_from
@@ -497,9 +534,10 @@ select.control
   text-align: center;
 }
 
-.order .btn 
+.order .btn
 {
   font-size: 1.875rem;
+
   padding: 10px 80px;
 }
 
@@ -507,33 +545,35 @@ select.control
 /*
  * Всплывающее окно
  */
-.ui-widget input, 
-.ui-widget select, 
-.ui-widget textarea, 
+.ui-widget input,
+.ui-widget select,
+.ui-widget textarea,
 .ui-widget button,
 .ui-widget
 {
   font-family: 'Open Sans', sans-serif;
 }
 
-.ui-state-default, 
+.ui-state-default,
 .ui-widget-content .ui-state-default
 {
-  background: #008dd2;
   color: #fff;
   border: none;
+  background: #008dd2;
 }
 
-.ui-dialog .ui-dialog-buttonpane 
-{ 
-  text-align: center;
+.ui-dialog .ui-dialog-buttonpane
+{
+  padding-right: 0;
   padding-left: 0;
-  padding-right: 0; 
+
+  text-align: center;
+
   border: none;
 }
 
-.ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset 
-{ 
+.ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset
+{
   float: none;
 }
 
@@ -544,18 +584,18 @@ select.control
 
 .ui-dialog .ui-corner-all
 {
-  border-radius: 0px;
+  border-radius: 0;
 }
 
 .ui-dialog.ui-corner-all
 {
-  border-radius: 0px;
+  border-radius: 0;
 }
 
 .ui-dialog-titlebar-close
 {
-  background: transparent !important;
   border: none;
+  background: transparent !important;
 }
 
 /*.ui-dialog .ui-widget-header
@@ -569,22 +609,24 @@ select.control
   background: #fff;
 }
 
-.ui-state-default .ui-icon 
+.ui-state-default .ui-icon
 {
   background-image: url(../js/jquery-ui/images/ui-icons_3d80b3_256x240.png) !important;
 }
 
 fieldset
 {
-  border: none;
   margin: 0;
   padding: 0;
+
+  border: none;
 }
 
 .dform_label
 {
+  font-size: .875rem;
+
   display: block;
-  font-size: 0.875rem;
 }
 
 .dform_row + .dform_row
@@ -594,10 +636,11 @@ fieldset
 
 .dcontrol
 {
+  width: 100%;
+
+  color: #6a8294;
   border: 1px solid #ebebeb;
   border-radius: 0;
-  width: 100%;
-  color: #6a8294;
   outline: none;
 }
 
@@ -610,8 +653,9 @@ select.dcontrol,
 input.dcontrol
 {
   font-size: 1rem;
-  height: 40px;
   line-height: 40px;
+
+  height: 40px;
   padding: 0 15px;
 }
 
@@ -629,20 +673,22 @@ input.dcontrol
 
 .team .section_head
 {
-  color: #ffffff;
+  color: #fff;
 }
 
 .team_photo
 {
   width: 100px;
   height: 100px;
+
   border-radius: 100%;
 }
 
 .team_item
 {
-  color: #ffffff;
   margin-bottom: 20px;
+
+  color: #fff;
 }
 
 .team_header
@@ -652,7 +698,7 @@ input.dcontrol
 
 .team_desc
 {
-  font-size: 0.875rem;
+  font-size: .875rem;
 }
 
 
@@ -663,7 +709,7 @@ input.dcontrol
 
 .service
 {
-  background: #ffffff;
+  background: #fff;
 }
 
 .service_list
@@ -679,35 +725,43 @@ input.dcontrol
 
 .earth
 {
-  display: none;
   position: absolute;
-  width: 350px;
-  left: 50%;
-  top: 50%;
-  margin-left: -175px;
-  margin-top: -146px;
   z-index: 20;
+  top: 50%;
+  left: 50%;
+
+  display: none;
+
+  width: 350px;
+  margin-top: -146px;
+  margin-left: -175px;
 }
 
 .service_desc
 {
-  display: block;
-  margin-bottom: 15px;
   position: relative;
+
+  display: block;
+
+  margin-bottom: 15px;
   padding-left: 25px;
 }
 
 .service_desc:before
 {
   position: absolute;
-  content: " ";
+  top: 4px;
+  left: 0;
+
   display: block;
+
   width: 15px;
   height: 15px;
+
+  content: ' ';
+
   border: 2px solid #15a0bd;
   border-radius: 100%;
-  left: 0;
-  top: 4px;
 }
 
 
@@ -718,9 +772,11 @@ input.dcontrol
 
 .footer
 {
-  color: #ffffff;
+  font-size: .875rem;
+
   padding: 60px 0 30px;
-  font-size: 0.875rem;
+
+  color: #fff;
 }
 
 .footer a
@@ -732,13 +788,16 @@ input.dcontrol
 {
   font-size: 1.875rem;
   font-weight: 300;
+
   margin-bottom: 1rem;
 }
 
 .logo-footer
 {
   display: block;
+
   height: 200px;
+
   background: url(../img/logo-footer.png) no-repeat center top;
   background-size: contain;
 }
@@ -753,6 +812,7 @@ input.dcontrol
 {
   margin: 0;
   padding: 0;
+
   list-style-type: none;
 }
 
@@ -771,18 +831,21 @@ input.dcontrol
 {
   margin: 0;
   padding: 0;
+
   list-style-type: none;
 }
 
 .soc_item a
 {
   display: block;
+  float: left;
+
   width: 46px;
   height: 47px;
-  background-position: center center;
-  background-repeat: no-repeat;
-  float: left;
   margin-right: 10px;
+
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .soc_item.__od a
@@ -793,4 +856,208 @@ input.dcontrol
 .soc_item.__vk a
 {
   background: url(../img/vk.png);
+}
+
+
+
+/*
+ * Хлебные крошки
+ */
+
+.breadcrumb
+{
+  margin: 0 0 60px;
+  padding: 0;
+
+  list-style-type: none;
+}
+
+.breadcrumb li
+{
+  float: left;
+}
+
+.breadcrumb a
+{
+  color: #006fa6;
+}
+
+h1
+{
+  font-size: 3rem;
+  font-weight: 300;
+  line-height: 3rem;
+
+  margin: 0 0 40px;
+}
+
+
+
+/*
+ * Статьи
+ */
+
+.article
+{
+  margin-top: 60px;
+}
+
+.article:first-child
+{
+  margin-top: 0;
+}
+
+.article_head
+{
+  font-size: 1.875rem;
+  line-height: 1.875rem;
+
+  margin: 0;
+}
+
+.article_banner
+{
+  width: 100%;
+  max-width: 100%;
+  margin-top: 30px;
+}
+
+.article_intro
+{
+  margin: 30px 0;
+}
+
+.article_intro p
+{
+  margin-top: 15px;
+}
+
+.article_intro p:first-child
+{
+  margin: 0;
+}
+
+
+
+/*
+ * Breadcrumbs
+ */
+
+.pagination
+{
+  margin: 60px 0;
+  padding: 0;
+
+  list-style-type: none;
+}
+
+.pagination li
+{
+  float: left;
+
+  margin-right: 8px;
+}
+
+.pagination a,
+.pagination span
+{
+  line-height: 33px;
+
+  display: block;
+
+  width: 34px;
+  height: 34px;
+
+  text-align: center;
+  text-decoration: none;
+
+  color: #008dd2;
+  border: 1px solid #008dd2;
+  border-radius: 100%;
+}
+
+.pagination span
+{
+  color: #b8cdd7;
+  border: 1px solid #b8cdd7;
+}
+
+.pagination a:hover
+{
+  background: #d2e7f1;
+}
+
+.pagination .active a
+{
+  color: #fff;
+  background: #008dd2;
+}
+
+
+
+/*
+ * Элементы боковой панели
+ */
+
+.sidebar_banner
+{
+  display: block;
+}
+
+.sidebar_banner img
+{
+  max-width: 100%;
+}
+
+select.base_control,
+input.base_control,
+textarea.base_control
+{
+  width: 100%;
+
+  color: #6a8294;
+  border: 1px solid #ebebeb;
+  outline: none;
+}
+
+select.base_control,
+input.base_control
+{
+  line-height: 38px;
+
+  height: 40px;
+  padding: 0 15px;
+}
+
+input.search
+{
+  padding: 0 40px 0 15px;
+}
+
+.search_wrapper
+{
+  position: relative;
+
+  margin: 45px 0;
+}
+
+.search_btn
+{
+  position: absolute;
+  right: 0;
+
+  width: 40px;
+  height: 40px;
+
+  opacity: .5;
+  top: 0;
+  background: url(../img/ico-search.png) no-repeat center center;
+  border: none;
+  padding: 0;
+  color: transparent;
+}
+
+.search_btn:hover
+{
+  opacity: 1;
 }
