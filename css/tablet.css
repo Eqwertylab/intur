@@ -85,4 +85,116 @@ input.control
 
 
 
+/*
+ * Услуги
+ */
+
+.service_item
+{
+  border-bottom: 1px solid #8ad7e7;
+  height: 60px;
+  font-size: 0.75rem;
+  margin: auto;
+}
+
+.service_item:before,
+.service_item:after
+{
+  position: absolute;
+  content: " ";
+  width: 9px;
+  height: 9px;
+  display: block;
+  background: #ffffff;
+  border: 1px solid #8FC2CD;
+  bottom: -5px;
+  border-radius: 100%;
+}
+
+.service_item:before
+{
+  left: -5px;
+}
+
+.service_item:after
+{
+  right: -5px;
+}
+
+.earth
+{
+  display: block;
+}
+
+.service_desc
+{
+  padding-left: 0;
+  position: absolute;
+  width: 185px;
+  bottom: 2px;
+  margin-bottom: 0;
+}
+
+.service_desc:before
+{
+  display: none;
+}
+
+.service_desc.__left
+{
+  left: -90px;
+  text-align: right;
+}
+
+.service_desc.__right
+{
+  right: -90px;
+}
+
+.service_item.__line_1
+{
+  width: 350px;
+}
+
+.service_item.__line_2
+{
+  width: 525px;
+}
+
+.service_item.__line_3
+{
+  width: 570px;
+}
+
+.service_item.__line_4
+{
+  width: 580px;
+}
+
+.service_item.__line_5
+{
+  width: 570px;
+}
+
+.service_item.__line_6
+{
+  width: 525px;
+}
+
+.service_item.__line_7
+{
+  width: 445px;
+}
+
+
+
+/*
+ * Футер
+ */
+
+.fo_header
+{
+  font-size: 1.5rem;
+}
+
 } /* <-- Small devices */

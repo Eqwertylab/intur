@@ -12,7 +12,7 @@
   <aside class="sidebar_mob">
     <ul class="menu_mob">
       <li><a href="">Главная</a></li>
-      <li><a href="">Подобрать тур</a></li>
+      <li class="active"><a href="">Подобрать тур</a></li>
       <li><a href="">О нас</a></li>
       <li><a href="">Статьи</a></li>
       <li><a href="">Контакты</a></li>
@@ -318,20 +318,161 @@
             <header class="section_head">Которые знают толк в отдыхе</header>
 
             <div class="row">
-              <div class="col-sm-12 col-md-10 center-block">
+              <div class="col-md-12 col-md-11 center-block">
 
-                <div class="row team_list">
-                  <div class="col-sm-4 team_item">1</div>
-                  <div class="col-sm-4 team_item">2</div>
-                  <div class="col-sm-4 team_item">3</div>
+                <div class="row team_list center-text">
+
+                  <div class="col-sm-4 team_item">
+                    <img src="img/team/people1.jpg" alt="" class="team_photo center-block">
+                    <header class="team_header">Корнилова Елена</header>
+                    <p class="team_desc">Путешествовала в Египет, Турцию, ОАЭ, Китай и Японию. Мне всегда нравилось изучать культуру и историю восточных стран. С радостью расскажу какие места следует посетить, чтобы вы сделали своё путешествие еще более запоминающимся.</p>
+                  </div>
+
+                  <div class="col-sm-4 team_item">
+                    <img src="img/team/people2.jpg" alt="" class="team_photo">
+                    <header class="team_header">Шеповалов Макс</header>
+                    <p class="team_desc">Индия, ГОА, Южная Африка, Куба и Австралия - я там был! Это удивительные страны, посещение которых вызавало у меня ощущение будто я попал на другую планету! Мне нравится общаться с местными жителями и узнавать интересные местах о которых не пушут в путеводителях.</p>
+                  </div>
+
+                  <div class="col-sm-4 team_item">
+                    <img src="img/team/people3.jpg" alt="" class="team_photo">
+                    <header class="team_header">Свиридова Анна</header>
+                    <p class="team_desc">Европа моя любовь! Начилось всё с Франции в Париже на незабываемый новый год. После этого я с большим удовольствием побывала в Испании, Италии и Праге.</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </section>
+
+        <section class="section service">
+          
+          <div class="container">
+            <header class="section_head">И вместе способны на всё!</header>
+            
+            <div class="service_list">
+              
+              <div class="service_item __line_1">
+                <span class="service_desc __left">
+                  Бронирование и подбор тура в любую точку мира
+                </span>
+                <span class="service_desc __right">
+                  Дополнительные виды страхования туристов 
+                </span>
+              </div>
+              
+              <div class="service_item __line_2">
+                <span class="service_desc __left">
+                  Туры по России
+                </span>
+                <span class="service_desc __right">
+                  Продажа билетов на концерты, шоу, культурные мероприятия в стране отдыха 
+                </span>
+              </div>
+              
+              <div class="service_item __line_3">
+                <span class="service_desc __left">
+                  Морские круизы
+                </span>
+                <span class="service_desc __right">
+                  Бронирование автомобилей и трансферов по миру 
+                </span>
+              </div>
+              
+              <div class="service_item __line_4">
+                <span class="service_desc __left">
+                  Бронирование отелей, апартаментов, вилл по всему миру
+                </span>
+                <span class="service_desc __right">
+                  Бронирование помещений для профедения конференций, семинаров, деловых встреч
+                </span>
+              </div>
+
+              <div class="service_item __line_5">
+                <span class="service_desc __left">
+                  Продажа авиа и ж/д билетов
+                </span>
+                <span class="service_desc __right">
+                  Подарочные сертификаты 
+                </span>
+              </div>
+
+              <div class="service_item __line_6">
+                <span class="service_desc __left">
+                  Оформление визы
+                </span>
+                <span class="service_desc __right">
+                  Туры в рассрочку 
+                </span>
+              </div>
+
+              <div class="service_item __line_7">
+                <span class="service_desc __left">
+                  Помощь в оформлении загран. паспорта 
+                </span>
+                <span class="service_desc __right">
+                  Возможность оплаты по безналичному расчету
+                </span>
+              </div>
+
+              <img src="img/earth.png" alt="" class="earth">
+            </div>
+          </div>
+        </section>
       </main>
     </div>
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4 col-md-5">
+            <div class="row">
+              <div class="col-lg-2 visible-lg">
+                <a href="" class="logo-footer"></a>
+              </div>
+              <div class="col-md-12 col-lg-10">
+                <header class="fo_header">8(3532)71-14-66</header>
+                <p>г.Оренбург, ул. М.Горького 25</p>
+                <p><a href="">Показать на карте</a></p>
+                <p>№ регистрации в реестре турагенств: <br>AB1234567890</p>
+                <p>№ регистрации в роспортребнадзоре: <br>РБ1234567890</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4 col-md-4 hidden-xs">
+            <header class="fo_header">Это интересно</header>
+            <ul class="fo_list">
+              <li class="fo_item">
+                <a href="">
+                  Курорт недели Занзибар - это целый архипилаг с одноименным островом 
+                </a>
+              </li>
+              <li class="fo_item">
+                <a href="">
+                  В какую страну можно поехать на бюджетный пляжный отдых
+                </a>
+              </li>
+              <li class="fo_item">
+                <a href="">
+                  Где в Греции самые лучшие пляжи
+                </a>
+              </li>
+              <li class="fo_item">
+                <a href="">
+                  Сколько стоит аренда виллы на Халкидиках
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-4 col-md-3 hidden-xs">
+            <header class="fo_header">Мы в соцсетях</header>
+            <ul class="soc">
+              <li class="soc_item __vk"><a href=""></a></li>
+              <li class="soc_item __od"><a href=""></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
   </div>
   <div class="curtain" id="curtain"></div>
   <script src="https://yastatic.net/jquery/2.1.3/jquery.min.js"></script>
