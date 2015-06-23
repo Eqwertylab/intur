@@ -1009,6 +1009,11 @@ h1
   max-width: 100%;
 }
 
+.sidebar_banner.__two
+{
+  margin-top: 45px;
+}
+
 select.base_control,
 input.base_control,
 textarea.base_control
@@ -1060,4 +1065,53 @@ input.search
 .search_btn:hover
 {
   opacity: 1;
+}
+
+
+
+/*
+ * Категории статей
+ */
+
+.category
+{
+  margin: 45px 0;
+  padding: 5px 0;
+  list-style-type: none;
+  border-left: 1px solid #d6d6d6;
+}
+
+.category li
+{
+  margin: 15px 0;
+  padding-left: 15px;
+}
+
+.category a
+{
+  color: #006fa6;
+}
+
+
+
+/*
+ * Контакты
+ */
+
+.map
+{
+  height: 368px;
+}
+
+.contacts header
+{
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.contacts
+{
+  background: #ffffff;
+  padding: 15px;
 }

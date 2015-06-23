@@ -61,6 +61,14 @@
                 <input type="submit" class="search_btn">
               </div>
 
+              <ul class="category">
+                <li><a href="">Страны мира</a></li>
+                <li><a href="">Советы туристам</a></li>
+                <li><a href="">Популярные туры</a></li>
+                <li><a href="">Экстремальные туры</a></li>
+                <li><a href="">Интересные уголки мира</a></li>
+              </ul>
+
               <a href="" class="sidebar_banner __two"><img src="img/banners/adv2.jpg" alt=""></a>
             </div>
 

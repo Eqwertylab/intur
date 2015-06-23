@@ -10,6 +10,7 @@ App = {
       App.Fn.sidebar_mob();
       App.Fn.slider();
       App.Fn.order_form();
+      App.Fn.yandexmap();
     })
   },
 
@@ -317,8 +318,32 @@ App = {
           .removeAttr('checked').removeAttr('selected');
       }
       
+    },
+
+    yandexmap:function() {
+
+      ymaps.ready(init);
+
+      var thisMap,
+          thisPlacemark;
+
+      function init() {
+
+        thisMap = new ymaps.Map("yandexmap", {
+          center: [51.76223529, 55.11914350], 
+          zoom: 16,
+          controls: {}
+        });
+
+        thisPlacemark = new ymaps.Placemark([51.76223529, 55.11914350], {
+          hintContent: 'Интур',
+          balloonContent: 'Интур'
+        });
+
+        thisMap.geoObjects.add(thisPlacemark);
+      }
     }
   }
-
 }
+
 App.In(jQuery);
