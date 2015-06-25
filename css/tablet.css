@@ -1,200 +1,245 @@
 /* Small devices (tablets, 768px and up) */
-@media (min-width: 768px) { 
-
-.section_head
+@media (min-width: 768px)
 {
-  font-size: 3rem;
-  line-height: 3rem;
-}
-  
-/*
+  .container.__inner_page
+  {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .sidebar
+  {
+    float: right;
+  }
+
+  .content
+  {
+    float: left;
+  }
+
+  .section_head
+  {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+
+  /*
  * Горячие предложения
  */
 
-.slider_hot
-{
-  height: 640px;
-  overflow: hidden;
-}
+  .slider_hot
+  {
+    overflow: hidden;
 
-.slider_hot:before 
-{
-  display: none;
-}
+    height: 640px;
+  }
 
-.slider_hot_toggle
-{
-  margin-top: 110px;
-  padding: 0 75px;
-}
+  .slider_hot:before
+  {
+    display: none;
+  }
 
-.select_country_wrap
-{
-  float: left;
-  margin-left: 60px;
-}
+  .slider_hot_toggle
+  {
+    margin-top: 110px;
+    padding: 0 75px;
+  }
 
-.select_country
-{
-  text-shadow: -1px 1px 2px rgba(0, 0, 0, 0.7);
-}
+  .select_country_wrap
+  {
+    float: left;
 
-.shgroup_wrapp
-{
-  float: right;
-  width: 55%;
-}
+    margin-left: 60px;
+  }
 
-.shgroup_item
-{
-  color: #ffffff;
-  text-shadow: -1px 1px 2px rgba(0, 0, 0, 0.7);
-}
+  .select_country
+  {
+    text-shadow: -1px 1px 2px rgba(0, 0, 0, .7);
+  }
 
-.direction_nav
-{
-  top: 60px;
-}
+  .shgroup_wrapp
+  {
+    float: right;
 
-.direction_nav li
-{
-  opacity: 0.7;
-}
+    width: 55%;
+  }
+
+  .shgroup_item
+  {
+    color: #fff;
+    text-shadow: -1px 1px 2px rgba(0, 0, 0, .7);
+  }
+
+  .direction_nav
+  {
+    top: 60px;
+  }
+
+  .direction_nav li
+  {
+    opacity: .7;
+  }
 
 
 
-/*
+  /*
  * Заявка
  */
 
-.control
-{
-  margin-bottom: 0;
-}
+  .control
+  {
+    margin-bottom: 0;
+  }
 
-select.control,
-input.control
-{
-  padding-left: 115px;
-}
+  select.control,
+  input.control
+  {
+    padding-left: 115px;
+  }
 
-.form_row
-{
-  margin-bottom: 30px;
-}
+  .form_row
+  {
+    margin-bottom: 30px;
+  }
 
 
 
-/*
+  /*
  * Услуги
  */
 
-.service_item
-{
-  border-bottom: 1px solid #8ad7e7;
-  height: 60px;
-  font-size: 0.75rem;
-  margin: auto;
-}
+  .service_item
+  {
+    font-size: .75rem;
 
-.service_item:before,
-.service_item:after
-{
-  position: absolute;
-  content: " ";
-  width: 9px;
-  height: 9px;
-  display: block;
-  background: #ffffff;
-  border: 1px solid #8FC2CD;
-  bottom: -5px;
-  border-radius: 100%;
-}
+    height: 60px;
+    margin: auto;
 
-.service_item:before
-{
-  left: -5px;
-}
+    border-bottom: 1px solid #8ad7e7;
+  }
 
-.service_item:after
-{
-  right: -5px;
-}
+  .service_item:before,
+  .service_item:after
+  {
+    position: absolute;
+    bottom: -5px;
 
-.earth
-{
-  display: block;
-}
+    display: block;
 
-.service_desc
-{
-  padding-left: 0;
-  position: absolute;
-  width: 185px;
-  bottom: 2px;
-  margin-bottom: 0;
-}
+    width: 9px;
+    height: 9px;
 
-.service_desc:before
-{
-  display: none;
-}
+    content: ' ';
 
-.service_desc.__left
-{
-  left: -90px;
-  text-align: right;
-}
+    border: 1px solid #8fc2cd;
+    border-radius: 100%;
+    background: #fff;
+  }
 
-.service_desc.__right
-{
-  right: -90px;
-}
+  .service_item:before
+  {
+    left: -5px;
+  }
 
-.service_item.__line_1
-{
-  width: 350px;
-}
+  .service_item:after
+  {
+    right: -5px;
+  }
 
-.service_item.__line_2
-{
-  width: 525px;
-}
+  .earth
+  {
+    display: block;
+  }
 
-.service_item.__line_3
-{
-  width: 570px;
-}
+  .service_desc
+  {
+    position: absolute;
+    bottom: 2px;
 
-.service_item.__line_4
-{
-  width: 580px;
-}
+    width: 185px;
+    margin-bottom: 0;
+    padding-left: 0;
+  }
 
-.service_item.__line_5
-{
-  width: 570px;
-}
+  .service_desc:before
+  {
+    display: none;
+  }
 
-.service_item.__line_6
-{
-  width: 525px;
-}
+  .service_desc.__left
+  {
+    left: -90px;
 
-.service_item.__line_7
-{
-  width: 445px;
-}
+    text-align: right;
+  }
+
+  .service_desc.__right
+  {
+    right: -90px;
+  }
+
+  .service_item.__line_1
+  {
+    width: 350px;
+  }
+
+  .service_item.__line_2
+  {
+    width: 525px;
+  }
+
+  .service_item.__line_3
+  {
+    width: 570px;
+  }
+
+  .service_item.__line_4
+  {
+    width: 580px;
+  }
+
+  .service_item.__line_5
+  {
+    width: 570px;
+  }
+
+  .service_item.__line_6
+  {
+    width: 525px;
+  }
+
+  .service_item.__line_7
+  {
+    width: 445px;
+  }
 
 
 
-/*
+  /*
+ *  Форма - поиск
+ */
+  .search_wrapper
+  {
+    margin: 0 0 45px;
+  }
+
+
+
+  /*
  * Футер
  */
 
-.fo_header
-{
-  font-size: 1.5rem;
-}
+  .fo_header
+  {
+    font-size: 1.5rem;
+  }
 
+  /*
+ * Хлебные крошки
+ */
+
+  .B_crumbBox
+  {
+    display: block;
+  }
 } /* <-- Small devices */

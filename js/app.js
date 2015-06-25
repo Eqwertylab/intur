@@ -11,6 +11,7 @@ App = {
       App.Fn.slider();
       App.Fn.order_form();
       App.Fn.yandexmap();
+      App.Fn.category_mob();
     })
   },
 
@@ -23,6 +24,12 @@ App = {
       $('#nav_mob_toggle, #curtain').click(function() {
 
         $('html').toggleClass('open');
+      });
+    },
+
+    category_mob: function() {
+      $('#category_mob').change(function() {
+        location.href = $(this).val();
       });
     },
 
@@ -322,7 +329,9 @@ App = {
 
     yandexmap:function() {
 
-      ymaps.ready(init);
+      if(document.getElementById('yandexmap')) {
+        ymaps.ready(init);
+      }
 
       var thisMap,
           thisPlacemark;

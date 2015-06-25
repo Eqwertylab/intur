@@ -50,24 +50,27 @@
 
       <main class="main">
         
-        <div class="container content">
+        <div class="container">
           <div class="row">
             
-            <div class="col-sm-4 col-md-3 pull-right">
-              <a href="" class="sidebar_banner __one"><img src="img/banners/adv1.jpg" alt=""></a>
-              <a href="" class="sidebar_banner __two"><img src="img/banners/adv2.jpg" alt=""></a>
+            <div class="col-sm-4 col-md-3 sidebar">
+              <a href="" class="hidden-xs sidebar_banner __one"><img src="img/banners/adv1.jpg" alt=""></a>
+              <a href="" class="hidden-xs sidebar_banner __two"><img src="img/banners/adv2.jpg" alt=""></a>
             </div>
 
-            <div class="col-sm-8 col-md-9 pull-left">
+            <div class="col-sm-8 col-md-9 content">
 
-              <ol class="breadcrumb">
-                <li><a href="/">Главная</a></li>
-                <li>&nbsp;&nbsp;>&nbsp;&nbsp;</li>
-                <li>Блог</li>
-                <li></li>
-              </ol>
+              <ul class="B_crumbBox">
+                <li class="B_firstCrumb" itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb"><a class="B_homeCrumb" itemprop="url" rel="Home" href="http://intour-oren.ru/"><span itemprop="title">Home</span></a></li>
+                &gt; 
+                <li itemscope="itemscope" class="B_crumb" itemtype="http://data-vocabulary.org/Breadcrumb"><a class="B_crumb" itemprop="url" rel="Читайте актуальные и полезные статьи о туризме" href="articles"><span itemprop="title">Статьи</span></a></li>
+                &gt; 
+                <li itemscope="itemscope" class="B_crumb" itemtype="http://data-vocabulary.org/Breadcrumb"><a class="B_crumb" itemprop="url" rel="Разное" href="articles/raznoe"><span itemprop="title">Разное</span></a></li>
+                &gt; 
+                <li class="B_lastCrumb" itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb"></li><li itemscope="itemscope" class="B_currentCrumb" itemtype="http://data-vocabulary.org/Breadcrumb">10 вещей, которые стоит привезти из Германии</li>
+              </ul>
 
-              <h1>Контакты</h1>
+              <h1 class="hidden-xs">Контакты</h1>
               
               <div class="contacts_wrap">
                 <div class="map" id="yandexmap"></div>
@@ -154,7 +157,7 @@
   </div>
   <div class="curtain" id="curtain"></div>
   <script src="https://yastatic.net/jquery/2.1.3/jquery.min.js"></script>
-  <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+  <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU&load=Map,Placemark" type="text/javascript"></script>
   <script src="js/jquery-ui/jquery-ui.min.js"></script>
   <script src="js/jquery-ui/datepicker-ru.js"></script>
   <script src="js/jquery-validation/dist/jquery.validate.min.js"></script>

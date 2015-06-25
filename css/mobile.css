@@ -97,11 +97,21 @@ body
   background: #007bb7;
 }
 
-.content
+.container.__inner_page
 {
-  padding-top: 60px;
+  padding-top: 15px;
   padding-bottom: 60px;
 }
+
+h1
+{
+  font-size: 3rem;
+  font-weight: 300;
+  line-height: 3rem;
+
+  margin: 0 0 40px;
+}
+
 
 
 /*
@@ -562,6 +572,11 @@ select.control
   background: #008dd2;
 }
 
+.ui-button:hover
+{
+  background: #007bb7;
+}
+
 .ui-dialog .ui-dialog-buttonpane
 {
   padding-right: 0;
@@ -597,12 +612,6 @@ select.control
   border: none;
   background: transparent !important;
 }
-
-/*.ui-dialog .ui-widget-header
-{
-  border: none;
-  background: transparent;
-}*/
 
 .ui-widget-content
 {
@@ -864,32 +873,31 @@ input.dcontrol
  * Хлебные крошки
  */
 
-.breadcrumb
+.B_crumbBox
 {
-  margin: 0 0 60px;
+  margin: 0 0 50px;
   padding: 0;
 
   list-style-type: none;
+  display: none;
 }
 
-.breadcrumb li
+.B_crumbBox li
 {
-  float: left;
+  display: inline-block;
+  padding: 0 5px;
 }
 
-.breadcrumb a
+.B_crumbBox .B_lastCrumb
+{
+  display: none;
+}
+
+.B_crumbBox a
 {
   color: #006fa6;
 }
 
-h1
-{
-  font-size: 3rem;
-  font-weight: 300;
-  line-height: 3rem;
-
-  margin: 0 0 40px;
-}
 
 
 
@@ -912,14 +920,13 @@ h1
   font-size: 1.875rem;
   line-height: 1.875rem;
 
-  margin: 0;
+  margin: 0 0 30px 0;
 }
 
 .article_banner
 {
   width: 100%;
   max-width: 100%;
-  margin-top: 30px;
 }
 
 .article_intro
@@ -940,7 +947,7 @@ h1
 
 
 /*
- * Breadcrumbs
+ * Постраничная навигация
  */
 
 .pagination
@@ -1002,11 +1009,17 @@ h1
 .sidebar_banner
 {
   display: block;
+  line-height: 0;
 }
 
 .sidebar_banner img
 {
   max-width: 100%;
+}
+
+.sidebar_banner.__one
+{
+  margin-bottom: 45px;
 }
 
 .sidebar_banner.__two
@@ -1043,23 +1056,23 @@ input.search
 {
   position: relative;
 
-  margin: 45px 0;
+  margin: 0 0 15px;
 }
 
 .search_btn
 {
   position: absolute;
+  top: 0;
   right: 0;
 
   width: 40px;
   height: 40px;
+  padding: 0;
 
   opacity: .5;
-  top: 0;
-  background: url(../img/ico-search.png) no-repeat center center;
-  border: none;
-  padding: 0;
   color: transparent;
+  border: none;
+  background: url(../img/ico-search.png) no-repeat center center;
 }
 
 .search_btn:hover
@@ -1067,6 +1080,10 @@ input.search
   opacity: 1;
 }
 
+.sisea-highlight
+{
+  background: #fffea3;
+}
 
 
 /*
@@ -1077,7 +1094,9 @@ input.search
 {
   margin: 45px 0;
   padding: 5px 0;
+
   list-style-type: none;
+
   border-left: 1px solid #d6d6d6;
 }
 
@@ -1090,6 +1109,16 @@ input.search
 .category a
 {
   color: #006fa6;
+}
+
+.category .active a
+{
+  color: #9cafb9;
+}
+
+.category_mob
+{
+  margin-bottom: 15px;
 }
 
 
@@ -1107,11 +1136,13 @@ input.search
 {
   font-size: 18px;
   font-weight: 600;
+
   margin-bottom: 10px;
 }
 
 .contacts
 {
-  background: #ffffff;
   padding: 15px;
+
+  background: #fff;
 }

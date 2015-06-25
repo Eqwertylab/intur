@@ -18,6 +18,7 @@
       <li><a href="">Контакты</a></li>
     </ul>
   </aside>
+  <div class="curtain" id="curtain"></div>
   <div class="wrapper">
     <div class="layout">
 
@@ -50,38 +51,48 @@
 
       <main class="main">
         
-        <div class="container content">
+        <div class="container __inner_page">
           <div class="row">
             
-            <div class="col-sm-4 col-md-3 pull-right">
-              <a href="" class="sidebar_banner __one"><img src="img/banners/adv1.jpg" alt=""></a>
+            <div class="col-sm-4 col-md-3 sidebar">
+              <a href="" class="hidden-xs sidebar_banner __one"><img src="img/banners/adv1.jpg" alt=""></a>
 
-              <div class="search_wrapper">
+              <div class="hidden-xs search_wrapper">
                 <input type="text" class="base_control search" placeholder="Поиск...">
                 <input type="submit" class="search_btn">
               </div>
 
-              <ul class="category">
+              <select name="" id="category_mob" class="visible-xs base_control category_mob">
+                <option value="http://www.yandex.ru/">Все категории</option>
+                <option value="http://www.mail.ru/">Пункт 1</option>
+                <option value="http://www.google.ru/">Пункт 2</option>
+                <option value="http://www.rambler.ru/">Пункт 3</option>
+              </select>
+
+              <ul class="hidden-xs category">
                 <li><a href="">Страны мира</a></li>
-                <li><a href="">Советы туристам</a></li>
+                <li class="active"><a href="">Советы туристам</a></li>
                 <li><a href="">Популярные туры</a></li>
                 <li><a href="">Экстремальные туры</a></li>
                 <li><a href="">Интересные уголки мира</a></li>
               </ul>
 
-              <a href="" class="sidebar_banner __two"><img src="img/banners/adv2.jpg" alt=""></a>
+              <a href="" class="hidden-xs sidebar_banner __two"><img src="img/banners/adv2.jpg" alt=""></a>
             </div>
 
-            <div class="col-sm-8 col-md-9 pull-left">
+            <div class="col-sm-8 col-md-9 content">
 
-              <ol class="breadcrumb">
-                <li><a href="/">Главная</a></li>
-                <li>&nbsp;&nbsp;>&nbsp;&nbsp;</li>
-                <li>Блог</li>
-                <li></li>
-              </ol>
+              <ul class="B_crumbBox">
+                <li class="B_firstCrumb" itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb"><a class="B_homeCrumb" itemprop="url" rel="Home" href="http://intour-oren.ru/"><span itemprop="title">Home</span></a></li>
+                &gt; 
+                <li itemscope="itemscope" class="B_crumb" itemtype="http://data-vocabulary.org/Breadcrumb"><a class="B_crumb" itemprop="url" rel="Читайте актуальные и полезные статьи о туризме" href="articles"><span itemprop="title">Статьи</span></a></li>
+                &gt; 
+                <li itemscope="itemscope" class="B_crumb" itemtype="http://data-vocabulary.org/Breadcrumb"><a class="B_crumb" itemprop="url" rel="Разное" href="articles/raznoe"><span itemprop="title">Разное</span></a></li>
+                &gt; 
+                <li class="B_lastCrumb" itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb"></li><li itemscope="itemscope" class="B_currentCrumb" itemtype="http://data-vocabulary.org/Breadcrumb">10 вещей, которые стоит привезти из Германии</li>
+              </ul>
 
-              <h1>Статьи</h1>
+              <h1 class="hidden-xs">Статьи</h1>
               
               <section class="article_list">
 
@@ -176,7 +187,7 @@
       </div>
     </footer>
   </div>
-  <div class="curtain" id="curtain"></div>
+  
   <script src="https://yastatic.net/jquery/2.1.3/jquery.min.js"></script>
   <script src="js/jquery-ui/jquery-ui.min.js"></script>
   <script src="js/jquery-ui/datepicker-ru.js"></script>
