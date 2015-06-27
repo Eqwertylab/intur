@@ -9,7 +9,7 @@ App = {
 
       App.Fn.sidebar_mob();
       App.Fn.slider();
-      App.Fn.order_form();
+      // App.Fn.order_form();
       App.Fn.yandexmap();
       App.Fn.category_mob();
     })
@@ -21,7 +21,7 @@ App = {
     
     sidebar_mob: function() {
 
-      $('#nav_mob_toggle, #curtain').click(function() {
+      $('#nav_mob_toggle, #curtain, .menu_mob a').click(function() {
 
         $('html').toggleClass('open');
       });

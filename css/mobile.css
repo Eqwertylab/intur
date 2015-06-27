@@ -49,6 +49,8 @@ body
 
   width: 100%;
   height: 100%;
+
+  -webkit-overflow-scrolling: touch;
 }
 
 .open .wrapper
@@ -210,10 +212,11 @@ h1
 
   overflow: hidden;
 
-  padding: 0 50px;
+  margin: 0 50px;
 
   text-align: center;
-  text-overflow: elipse;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .nav_mob_toggle
@@ -328,8 +331,21 @@ h1
 
   height: 392px;
 
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.slider_hot *
+{
+  -webkit-user-select: auto;
+     -moz-user-select: auto;
+      -ms-user-select: auto;
+          user-select: auto;
 }
 
 .slider_hot:before
@@ -355,7 +371,6 @@ h1
 .select_country
 {
   font-size: 2.25rem;
-  font-weight: 300;
   font-style: italic;
   line-height: 2.50rem;
 
@@ -366,7 +381,7 @@ h1
 
   color: #bf0000;
   border: none;
-  border-bottom: 1px solid #bf0000;
+  border-bottom: 2px solid #bf0000;
   outline: none;
   background: transparent url(../img/appearance.png) no-repeat right center;
 
@@ -394,6 +409,8 @@ h1
 {
   font-size: 2rem;
   font-style: italic;
+
+  display: none;
 
   text-align: center;
 
@@ -454,6 +471,12 @@ h1
 .order
 {
   background: #fff;
+}
+
+.order_form label.error
+{
+  position: relative;
+  top: -20px;
 }
 
 label.error
@@ -875,16 +898,18 @@ input.dcontrol
 
 .B_crumbBox
 {
+  display: none;
+
   margin: 0 0 50px;
   padding: 0;
 
   list-style-type: none;
-  display: none;
 }
 
 .B_crumbBox li
 {
   display: inline-block;
+
   padding: 0 5px;
 }
 
@@ -1008,8 +1033,9 @@ input.dcontrol
 
 .sidebar_banner
 {
-  display: block;
   line-height: 0;
+
+  display: block;
 }
 
 .sidebar_banner img

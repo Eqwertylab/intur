@@ -146,7 +146,7 @@
 
             <div class="row">
 
-              <form class="col-sm-12 col-md-10 col-lg-10 center-block" id="order_form">
+              <form class="col-sm-12 col-md-10 col-lg-10 center-block order_form" id="order_form">
 
                 <div class="row form_row">
 
