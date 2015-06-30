@@ -115,6 +115,33 @@ h1
   margin: 0 0 40px;
 }
 
+.half-image img,
+.wide-image img,
+.wide-image
+{
+  width: 100%;
+  max-width: 100%;
+}
+
+.half-image
+{
+  width: 50%;
+  max-width: 50%;
+}
+
+.third-image
+{
+  width: 33.33333%;
+  max-width: 33.33333%;
+}
+
+.three-quarters-image
+{
+  width: 75%;
+  max-width: 75%;
+}
+
+
 
 
 /*
@@ -939,6 +966,11 @@ input.dcontrol
 .article:first-child
 {
   margin-top: 0;
+}
+
+.article img
+{
+  max-width: 100%;
 }
 
 .article_head
