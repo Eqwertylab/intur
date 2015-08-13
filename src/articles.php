@@ -6,7 +6,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Интур - Главная</title>
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,300italic,600&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- build:css css/style.css-->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="js/jquery-ui/jquery-ui.css">
+  <link rel="stylesheet" href="js/jquery-ui/jquery-ui.theme.css">
+  <link rel="stylesheet" href="css/grid12.css">
+  <link rel="stylesheet" href="css/ranges.css">
+  <link rel="stylesheet" href="css/mobile.css">
+  <link rel="stylesheet" href="css/tablet.css">
+  <link rel="stylesheet" href="css/notebook.css">
+  <link rel="stylesheet" href="css/largescreen.css">
+  <!-- endbuild -->
+
 </head>
 <body>
   <aside class="sidebar_mob">
@@ -188,12 +200,15 @@
     </footer>
   </div>
   
-  <script src="https://yastatic.net/jquery/2.1.3/jquery.min.js"></script>
+  <!-- build:js js/script.js -->
+  <script src="js/jquery.min.js"></script>
   <script src="js/jquery-ui/jquery-ui.min.js"></script>
   <script src="js/jquery-ui/datepicker-ru.js"></script>
   <script src="js/jquery-validation/dist/jquery.validate.min.js"></script>
   <script src="js/jquery-validation/dist/localization/messages_ru.min.js"></script>
   <script src="js/jquery-validation/dist/additional-methods.min.js"></script>
   <script src="js/app.js"></script>
+  <!-- endbuild -->
+
 </body>
 </html>
